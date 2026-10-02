@@ -554,6 +554,12 @@ p {
   text-transform: uppercase;
 }
 
+.quote {
+  padding: clamp(2.8rem, 7vw, 4rem) clamp(1rem, 4vw, 2rem);
+  border-top: 1px solid var(--line);
+  background: #111;
+}
+
 .quote blockquote {
   margin: 0 auto;
   width: min(720px, 100%);
@@ -655,6 +661,7 @@ p {
   padding: 1.1rem clamp(1rem, 4vw, 2rem);
 }
 
+.whiskey__bar h1,
 .whiskey__bar h2 {
   font-family: var(--font-display);
   font-size: clamp(2.4rem, 8vw, 4.2rem);
@@ -884,18 +891,10 @@ p {
 }
 
 .visit {
-  padding: clamp(3rem, 7vw, 4.5rem) clamp(1rem, 4vw, 2rem);
-  border-top: 1px solid var(--line);
-  width: min(1100px, 100%);
+  padding: clamp(2.4rem, 6vw, 3.5rem) 0;
+  border-top: 0;
+  width: min(1100px, calc(100% - 2rem));
   margin: 0 auto;
-}
-
-.visit h2 {
-  font-family: var(--font-display);
-  font-size: clamp(2.4rem, 7vw, 4rem);
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  margin-bottom: 1.5rem;
 }
 
 .visit__layout {
@@ -909,15 +908,6 @@ p {
   display: grid;
   gap: 1.2rem;
   align-content: start;
-}
-
-.visit h3 {
-  font-family: var(--font-display);
-  color: var(--yellow);
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  font-size: 1.15rem;
-  margin-bottom: 0.4rem;
 }
 
 .visit p {
@@ -1001,7 +991,9 @@ p {
 @media (max-width: 900px) {
   .taps,
   .visit__layout,
-  .takeaway__facts {
+  .takeaway__facts,
+  .home-links,
+  .whiskey-page__grid {
     grid-template-columns: 1fr;
   }
 
