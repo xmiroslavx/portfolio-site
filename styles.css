@@ -954,22 +954,6 @@ p {
   color: var(--yellow);
 }
 
-.social {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.9rem 1.2rem;
-}
-
-.social a {
-  color: var(--ink);
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.social a:hover {
-  color: var(--yellow);
-}
-
 .social--footer {
   justify-content: center;
 }
@@ -1000,12 +984,19 @@ p {
   background: #111;
 }
 
-.home-info__grid {
-  width: min(980px, 100%);
+.home-info__layout {
+  width: min(1100px, 100%);
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1.4rem;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: clamp(1.2rem, 3vw, 2rem);
+  align-items: stretch;
+}
+
+.home-info__details {
+  display: grid;
+  gap: 1.2rem;
+  align-content: start;
 }
 
 .home-info h2 {
@@ -1030,12 +1021,90 @@ p {
   color: var(--yellow);
 }
 
-.home-info__actions {
-  width: min(980px, 100%);
-  margin: 1.6rem auto 0;
+.home-info__map {
+  min-height: 22rem;
+  border: 1px solid var(--line);
+  overflow: hidden;
+  background: #0a0a0a;
+}
+
+.home-info__map iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 22rem;
+  border: 0;
+  filter: grayscale(1) contrast(1.05) brightness(0.72);
+}
+
+.reviews {
+  width: min(1100px, 100%);
+  margin: 2.4rem auto 0;
+  padding-top: 2rem;
+  border-top: 1px solid var(--line);
+}
+
+.reviews__head {
   display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 1rem;
   flex-wrap: wrap;
-  gap: 0.7rem;
+  margin-bottom: 1.3rem;
+}
+
+.reviews__head h2 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3rem);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin: 0.2rem 0 0;
+}
+
+.reviews__score {
+  color: var(--yellow) !important;
+  font-weight: 700;
+  font-size: 1.05rem !important;
+}
+
+.reviews__score strong {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.reviews__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.4rem;
+}
+
+.reviews figure {
+  margin: 0;
+  padding: 1.1rem;
+  border: 1px solid var(--line);
+  background: #0a0a0a;
+}
+
+.reviews figure > p {
+  color: var(--yellow) !important;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.55rem;
+  font-size: 0.95rem !important;
+}
+
+.reviews blockquote {
+  margin: 0;
+  color: #d5d5d5;
+  font-size: 0.98rem;
+  line-height: 1.45;
+}
+
+.reviews__note {
+  margin-top: 0.9rem;
+  color: var(--muted) !important;
+  font-size: 0.88rem !important;
 }
 
 .site-footer {
