@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tastingit | Barley &amp; Bait</title>
+  <meta name="description" content="Olut- ja viskitastingit Barley &amp; Baitissa. Hinta sisältää tilan, opastuksen ja tuotteet." />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="concept-banner" role="note">Konsepti, ei virallinen Barley &amp; Baitin sivusto</div>
+
+  <header class="site-header" id="top">
+    <a class="logo" href="index.html">
+      <img src="assets/barley-bait-logo.png" alt="Barley &amp; Bait" width="48" height="48" />
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Avaa valikko">
+      <span></span><span></span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Päänavigaatio">
+      <a href="index.html">Etusivu</a>
+      <a href="olut.html">Olut</a>
+      <a href="viski.html">Viski</a>
+      <a href="tastingit.html" aria-current="page">Tastingit</a>
+      <a href="yhteys.html">Yhteys</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="tastings page-section">
+      <div class="tastings__intro">
+        <p class="eyebrow">Tastingit</p>
+        <h1>Maistelu aktiviteetiksi</h1>
+        <p>
+          Hinta sisältää tilan, opastuksen ja tuotteet.
+          Synttärit, polttarit, firmat.
+        </p>
+      </div>
+
+      <ul class="price-list">
+        <li>
+          <div>
+            <span>Viski</span>
+            <strong>Matka maailman ympäri</strong>
+            <p>5–6 maistiaista, noin 2 cl</p>
+          </div>
+          <b>50 €</b>
+        </li>
+        <li>
+          <div>
+            <span>Viski</span>
+            <strong>Berry Bros &amp; Rudd 1</strong>
+            <p>Itsenäisiä pullotteita</p>
+          </div>
+          <b>57 €</b>
+        </li>
+        <li>
+          <div>
+            <span>Olut</span>
+            <strong>Päivän kattaus</strong>
+            <p>5–6 olutta, noin 2 dl</p>
+          </div>
+          <b>35 €</b>
+        </li>
+        <li>
+          <div>
+            <span>Olut</span>
+            <strong>IPA, APA, NEIPA</strong>
+            <p>Tai hapanta eri muodoissa, teema sovitaan</p>
+          </div>
+          <b>40 €</b>
+        </li>
+      </ul>
+
+      <form class="booking" id="booking-form" novalidate>
+        <h2>Kysy tastingista</h2>
+        <p class="booking__hint">Konseptilomake. Ei lähetä oikeaa varausta.</p>
+
+        <fieldset>
+          <legend>Mikä kiinnostaa</legend>
+          <label><input type="checkbox" name="tasting" value="viski-maailma" /> Matka maailman ympäri</label>
+          <label><input type="checkbox" name="tasting" value="viski-bbr" /> Berry Bros &amp; Rudd 1</label>
+          <label><input type="checkbox" name="tasting" value="olut-paiva" /> Päivän kattaus</label>
+          <label><input type="checkbox" name="tasting" value="olut-hop" /> IPA tai hapanta</label>
+        </fieldset>
+
+        <div class="booking__grid">
+          <label>
+            Osallistujamäärä
+            <input type="number" name="guests" min="1" max="40" required placeholder="8" />
+          </label>
+          <label>
+            Toivottu päivä
+            <input type="date" name="date" required />
+          </label>
+          <label>
+            Nimi
+            <input type="text" name="name" required autocomplete="name" />
+          </label>
+          <label>
+            Sähköposti
+            <input type="email" name="email" required autocomplete="email" />
+          </label>
+          <label class="booking__full">
+            Vapaa sana
+            <textarea name="message" rows="3" placeholder="Aika, ruokatoiveet, yritys…"></textarea>
+          </label>
+        </div>
+
+        <button class="btn btn--yellow" type="submit">Lähetä</button>
+        <p class="booking__status" id="booking-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <img src="assets/barley-bait-logo.png" alt="" width="56" height="56" />
+    <p>Barley &amp; Bait, Jätkäsaari</p>
+    <div class="social social--footer">
+      <a href="https://www.facebook.com/barleybait" target="_blank" rel="noopener noreferrer">Facebook</a>
+      <a href="https://www.instagram.com/barleybait" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="https://www.tripadvisor.com/Restaurant_Review-g189934-d19238887-Reviews-Barley_Bait-Helsinki_Uusimaa.html" target="_blank" rel="noopener noreferrer">Tripadvisor</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
