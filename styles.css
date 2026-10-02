@@ -954,6 +954,26 @@ p {
   color: var(--yellow);
 }
 
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem 1.2rem;
+}
+
+.social a {
+  color: var(--ink);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.social a:hover {
+  color: var(--yellow);
+}
+
+.social--footer {
+  justify-content: center;
+}
+
 .social--hero {
   margin-top: 1.2rem;
   justify-content: center;
