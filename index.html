@@ -1,16 +1,171 @@
 <!DOCTYPE html>
-<html>
+<html lang="fi">
 <head>
-  <title>My First GitHub Page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Barley &amp; Bait | Konsepti</title>
+  <meta name="description" content="Konseptiversio Barley &amp; Baitin sivustosta. Oluthuone ja viskiravintola Jätkäsaaressa." />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <p>This is my first GitHub Pages site.</p>
+  <div class="concept-banner" role="note">Konsepti, ei virallinen Barley &amp; Baitin sivusto</div>
 
-    <section id="about-me">
-        <h2>About Me</h2>
-        <p>Hi! I'm Mirtsi, a computer science student from Joensuu. I love coding, editing videos, and creating content for social media. 🚀</p>
+  <header class="site-header" id="top">
+    <a class="logo" href="index.html">
+      <img src="assets/barley-bait-logo.png" alt="Barley &amp; Bait" width="48" height="48" />
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Avaa valikko">
+      <span></span><span></span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Päänavigaatio">
+      <a href="index.html" aria-current="page">Etusivu</a>
+      <a href="olut.html">Olut</a>
+      <a href="viski.html">Viski</a>
+      <a href="tastingit.html">Tastingit</a>
+      <a href="yhteys.html">Yhteys</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero__media" aria-hidden="true">
+        <img src="assets/hero-taps.jpg" alt="" width="2400" height="1600" />
+        <div class="hero__scrim"></div>
+      </div>
+      <div class="hero__content">
+        <img class="hero__logo" src="assets/barley-bait-logo.png" alt="Barley &amp; Bait" width="280" height="280" />
+        <p class="hero__place">Craft beer &amp; whiskey, Jätkäsaari, vuodesta 2019</p>
+        <p class="hero__lede">
+          16 hanaa, yli sata tölkkiä ja pulloa, real alea sekä viskiä.
+          Paikallisten äänestämä Jätkäsaaren paras baari.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--yellow" href="olut.html">Hanassa nyt</a>
+          <a class="btn btn--outline" href="#info">Aukiolo ja osoite</a>
+        </div>
+        <div class="social social--hero" aria-label="Sosiaalinen media">
+          <a href="https://www.facebook.com/barleybait" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.instagram.com/barleybait" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://untappd.com/v/barley-and-bait/9389634" target="_blank" rel="noopener noreferrer">Untappd</a>
+          <a href="https://www.tripadvisor.com/Restaurant_Review-g189934-d19238887-Reviews-Barley_Bait-Helsinki_Uusimaa.html" target="_blank" rel="noopener noreferrer">Tripadvisor</a>
+        </div>
+      </div>
     </section>
 
+    <section class="quote">
+      <blockquote>
+        <p>Sleep late, have fun, get wild, drink whiskey.</p>
+        <cite>Hunter S. Thompson</cite>
+      </blockquote>
+    </section>
+
+    <section class="home-links">
+      <a class="home-link" href="olut.html">
+        <span>Olut</span>
+        <strong>16 hanaa ja 100+ tölkkiä</strong>
+      </a>
+      <a class="home-link" href="viski.html">
+        <span>Viski</span>
+        <strong>Lasittain ympäri maailmaa</strong>
+      </a>
+      <a class="home-link" href="tastingit.html">
+        <span>Tastingit</span>
+        <strong>Ryhmille ja firmoille</strong>
+      </a>
+      <a class="home-link" href="yhteys.html">
+        <span>Yhteys</span>
+        <strong>Kartta ja yhteystiedot</strong>
+      </a>
+    </section>
+
+    <section class="home-info" id="info">
+      <div class="home-info__layout">
+        <div class="home-info__details">
+          <div>
+            <h2>Osoite</h2>
+            <p>Välimerenkatu 20<br />00220 Helsinki, Jätkäsaari</p>
+          </div>
+          <div>
+            <h2>Aukiolo</h2>
+            <p>Su–To 14–01<br />Pe–La 14–02</p>
+          </div>
+          <div>
+            <h2>Yhteys</h2>
+            <p>
+              <a href="tel:+358408239850">040 823 9850</a><br />
+              <a href="mailto:info@barleybait.fi">info@barleybait.fi</a>
+            </p>
+          </div>
+          <div>
+            <h2>Some</h2>
+            <div class="social">
+              <a href="https://www.facebook.com/barleybait" target="_blank" rel="noopener noreferrer">Facebook</a>
+              <a href="https://www.instagram.com/barleybait" target="_blank" rel="noopener noreferrer">Instagram</a>
+              <a href="https://untappd.com/v/barley-and-bait/9389634" target="_blank" rel="noopener noreferrer">Untappd</a>
+              <a href="https://www.tripadvisor.com/Restaurant_Review-g189934-d19238887-Reviews-Barley_Bait-Helsinki_Uusimaa.html" target="_blank" rel="noopener noreferrer">Tripadvisor</a>
+            </div>
+          </div>
+          <a class="btn btn--outline" href="tel:+358408239850">Soita</a>
+        </div>
+
+        <div class="home-info__map">
+          <iframe
+            title="Barley &amp; Bait kartalla"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://maps.google.com/maps?q=Barley%20%26%20Bait%20V%C3%A4limerenkatu%2020%20Helsinki&t=&z=15&ie=UTF8&iwloc=near&output=embed"
+          ></iframe>
+        </div>
+      </div>
+
+      <div class="reviews">
+        <div class="reviews__head">
+          <div>
+            <p class="eyebrow">Google</p>
+            <h2>Arvostelut</h2>
+          </div>
+          <p class="reviews__score"><strong>4,7</strong> / 5 · 300+ arvostelua</p>
+        </div>
+        <div class="reviews__grid">
+          <figure>
+            <p>★★★★★</p>
+            <blockquote>Laaja hanavalikoima ja rento tunnelma. Juuri sellainen baari johon jää helposti pidemmäksi aikaa.</blockquote>
+          </figure>
+          <figure>
+            <p>★★★★★</p>
+            <blockquote>Ystävällinen henkilökunta joka tuntee oluet ja viskit. Cozy paikka Jätkäsaaressa.</blockquote>
+          </figure>
+          <figure>
+            <p>★★★★★</p>
+            <blockquote>Hyvä craft beer -valikoima ja viskihylly. Suosittelen jos etsii kunnollista olutbaaria.</blockquote>
+          </figure>
+        </div>
+        <a
+          class="btn btn--yellow"
+          href="https://www.google.com/maps/search/?api=1&query=Barley+%26+Bait+V%C3%A4limerenkatu+20+Helsinki"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Katso Google-arvostelut</a>
+        <p class="reviews__note">Konseptissa näytetään esimerkkilainaukset. Valmis sivu voi näyttää ajantasaiset Google-arvostelut.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <img src="assets/barley-bait-logo.png" alt="" width="56" height="56" />
+    <p>Barley &amp; Bait, Jätkäsaari</p>
+    <div class="social social--footer">
+      <a href="https://www.facebook.com/barleybait" target="_blank" rel="noopener noreferrer">Facebook</a>
+      <a href="https://www.instagram.com/barleybait" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="https://untappd.com/v/barley-and-bait/9389634" target="_blank" rel="noopener noreferrer">Untappd</a>
+      <a href="https://www.tripadvisor.com/Restaurant_Review-g189934-d19238887-Reviews-Barley_Bait-Helsinki_Uusimaa.html" target="_blank" rel="noopener noreferrer">Tripadvisor</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
