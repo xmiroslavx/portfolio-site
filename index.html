@@ -53,117 +53,95 @@
 
     <section class="board" id="hanassa">
       <div class="board__bar">
-        <h2>Hanassa</h2>
-        <p>Esimerkkilista konseptia varten. Oikea lista päivittyy baarissa.</p>
+        <div>
+          <h2>Hanassa</h2>
+          <p>16 hanaa vaihtuu viikoittain. Lista on esimerkki konseptia varten.</p>
+        </div>
+        <p class="board__meta">Päivitetty konseptissa · oikea lista baarissa</p>
       </div>
 
       <div class="board__tabs" role="tablist" aria-label="Olutlistat">
-        <button class="board__tab is-active" type="button" role="tab" aria-selected="true" data-panel="hanassa">Hanassa</button>
-        <button class="board__tab" type="button" role="tab" aria-selected="false" data-panel="takeaway">Mukaan</button>
+        <button class="board__tab is-active" type="button" role="tab" aria-selected="true" data-panel="hanassa">Hanassa (16)</button>
+        <button class="board__tab" type="button" role="tab" aria-selected="false" data-panel="takeaway">Mukaan (100+)</button>
       </div>
 
       <div class="board__panel is-active" id="panel-hanassa" role="tabpanel">
         <ol class="taps">
-          <li>
-            <span class="taps__n">1</span>
-            <div>
-              <strong>Mind Games</strong>
-              <span>DIPA, Factory Brewing, Kerava</span>
-            </div>
-            <em>8,0 %</em>
-          </li>
-          <li>
-            <span class="taps__n">2</span>
-            <div>
-              <strong>Baltic Porter</strong>
-              <span>Baltic Porter, Mallassepät, Naantali</span>
-            </div>
-            <em>6,5 %</em>
-          </li>
-          <li>
-            <span class="taps__n">3</span>
-            <div>
-              <strong>Vinohradská 11</strong>
-              <span>Czech Pilsner, Vinohradský, Praha</span>
-            </div>
-            <em>4,5 %</em>
-          </li>
-          <li>
-            <span class="taps__n">4</span>
-            <div>
-              <strong>Don Juoma (Cask)</strong>
-              <span>NEIPA, Maku Brewing, Tuusula</span>
-            </div>
-            <em>5,5 %</em>
-          </li>
-          <li>
-            <span class="taps__n">5</span>
-            <div>
-              <strong>Alppilaakso GF</strong>
-              <span>Helles Lager, Maku, Tuusula</span>
-            </div>
-            <em>5,1 %</em>
-          </li>
-          <li>
-            <span class="taps__n">6</span>
-            <div>
-              <strong>Unforgettable II</strong>
-              <span>Hazy West Coast IPA, Maku × B&amp;B</span>
-            </div>
-            <em>5,9 %</em>
-          </li>
-          <li>
-            <span class="taps__n">7</span>
-            <div>
-              <strong>Naantalin Keppinen IPA</strong>
-              <span>NEIPA, Mallassepät, Naantali</span>
-            </div>
-            <em>6,2 %</em>
-          </li>
-          <li>
-            <span class="taps__n">8</span>
-            <div>
-              <strong>Cheri Lady GF</strong>
-              <span>Sour</span>
-            </div>
-            <em>4,8 %</em>
-          </li>
+          <li><span class="taps__n">1</span><div><strong>Mind Games</strong><span>DIPA, Factory Brewing, Kerava</span></div><em>8,0 %</em></li>
+          <li><span class="taps__n">2</span><div><strong>Baltic Porter</strong><span>Baltic Porter, Mallassepät, Naantali</span></div><em>6,5 %</em></li>
+          <li><span class="taps__n">3</span><div><strong>Vinohradská 11</strong><span>Czech Pilsner, Vinohradský, Praha</span></div><em>4,5 %</em></li>
+          <li><span class="taps__n">4</span><div><strong>Don Juoma (Cask)</strong><span>NEIPA, Maku Brewing, Tuusula</span></div><em>5,5 %</em></li>
+          <li><span class="taps__n">5</span><div><strong>Alppilaakso GF</strong><span>Helles Lager, Maku, Tuusula</span></div><em>5,1 %</em></li>
+          <li><span class="taps__n">6</span><div><strong>Unforgettable II</strong><span>Hazy West Coast IPA, Maku × B&amp;B</span></div><em>5,9 %</em></li>
+          <li><span class="taps__n">7</span><div><strong>Naantalin Keppinen IPA</strong><span>NEIPA, Mallassepät, Naantali</span></div><em>6,2 %</em></li>
+          <li><span class="taps__n">8</span><div><strong>Cheri Lady GF</strong><span>Sour</span></div><em>4,8 %</em></li>
+          <li><span class="taps__n">9</span><div><strong>Old School GF</strong><span>American IPA</span></div><em>6,0 %</em></li>
+          <li><span class="taps__n">10</span><div><strong>Carnivorous</strong><span>Amber Ale</span></div><em>5,4 %</em></li>
+          <li><span class="taps__n">11</span><div><strong>West Coast Classic</strong><span>IPA, kiertävä hana</span></div><em>6,5 %</em></li>
+          <li><span class="taps__n">12</span><div><strong>Sour Cherry</strong><span>Sour, kausihana</span></div><em>5,2 %</em></li>
+          <li><span class="taps__n">13</span><div><strong>Stout Night</strong><span>Stout</span></div><em>7,0 %</em></li>
+          <li><span class="taps__n">14</span><div><strong>Pilsner Line</strong><span>Pilsner</span></div><em>4,7 %</em></li>
+          <li><span class="taps__n">15</span><div><strong>Hazy Habit</strong><span>NEIPA</span></div><em>6,1 %</em></li>
+          <li><span class="taps__n">16</span><div><strong>Real Ale</strong><span>Cask, vaihtuva tynnyri</span></div><em>~4,5 %</em></li>
         </ol>
+        <p class="board__foot">Valmiissa sivussa lista voi tulla suoraan nykyisestä järjestelmästä, joten kaikki 16 hanaa ja tölkit pysyvät ajan tasalla.</p>
       </div>
 
       <div class="board__panel" id="panel-takeaway" role="tabpanel" hidden>
         <div class="takeaway">
           <h3>Tölkit ja pullot mukaan</h3>
+          <ul class="takeaway__facts">
+            <li><strong>100+</strong> tölkkiä ja pulloa</li>
+            <li><strong>14–21</strong> mukaanmyynti</li>
+            <li><strong>Alle 8 %</strong></li>
+          </ul>
           <p>
-            Yli 100 tölkkiä ja pulloa. Mukaan klo <strong>14–21</strong>, alle 8 %.
-            Valmis sivu voi näyttää saman listan kuin nykyinen sivusto.
+            Konseptissa ei ole koko take away -listaa.
+            Valmis sivu näyttää saman listan kuin nykyinen sivusto.
           </p>
         </div>
       </div>
     </section>
 
-    <section class="about" id="tarina">
+    <section class="quote" id="tarina">
       <blockquote>
         <p>Sleep late, have fun, get wild, drink whiskey.</p>
         <cite>Hunter S. Thompson</cite>
       </blockquote>
-      <div class="about__copy">
-        <h2>Jätkäsaarelaista olutkulttuuria vuodesta 2019</h2>
-        <p>
-          Hanat vaihtuvat viikoittain: NEIPAa, souria, keskieurooppalaisia klassikoita
-          ja yksi cask. Yksityistiloihin mahtuu kabinettiin 8, klubiin 14 ja alasaliin jopa 35 henkeä.
-        </p>
-        <p class="about__note">Helsingin Uutiset: paras baari Jätkäsaaressa, kolmanneksi paras Helsingissä.</p>
+    </section>
+
+    <section class="about">
+      <p class="eyebrow">Baari</p>
+      <h2>Jätkäsaarelaista olutkulttuuria vuodesta 2019</h2>
+      <p class="about__text">
+        Hanat vaihtuvat viikoittain: NEIPAa, souria, keskieurooppalaisia klassikoita ja yksi cask.
+        Rento pubi, jossa olut otetaan tosissaan.
+      </p>
+      <p class="about__note">Helsingin Uutiset: paras baari Jätkäsaaressa, kolmanneksi paras Helsingissä.</p>
+      <div class="spaces">
+        <div><strong>Kabinetti</strong><span>8 hlö</span></div>
+        <div><strong>Klubi</strong><span>14 hlö</span></div>
+        <div><strong>Alasali</strong><span>jopa 35 hlö</span></div>
       </div>
     </section>
 
     <section class="whiskey" id="viski">
-      <h2>Viski</h2>
-      <p>
-        Hyllyllä on klassikoita ja harvinaisempia pullotteita.
-        Yksi lasi tai illan mittainen reitti, ilman pönötystä.
-      </p>
-      <a class="btn btn--yellow" href="#tastingit">Katso tastingit</a>
+      <div class="whiskey__bar">
+        <h2>Viski</h2>
+        <p>Klassikoita, harvinaisuuksia ja tastingreittejä</p>
+      </div>
+      <div class="whiskey__body">
+        <p>
+          Viskihyllyltä löytyy sekä tuttuja nimiä että itsenäisiä pullotteita.
+          Sopii yhdelle lasilliselle tai illan mittaiselle kierrokselle, ilman pönötystä.
+        </p>
+        <ul class="whiskey__points">
+          <li>Laaja valikoima lasittain</li>
+          <li>Yksityiset viskitastingit ryhmille</li>
+          <li>Rento baaritiski, ei seremonioita</li>
+        </ul>
+        <a class="btn btn--outline" href="#tastingit">Katso tastingit</a>
+      </div>
     </section>
 
     <section class="tastings" id="tastingit">
@@ -252,26 +230,41 @@
 
     <section class="visit" id="yhteys">
       <h2>Yhteys</h2>
-      <div class="visit__grid">
-        <div>
-          <h3>Osoite</h3>
-          <p>Välimerenkatu 20<br />00220 Helsinki, Jätkäsaari</p>
+      <div class="visit__layout">
+        <div class="visit__info">
+          <div>
+            <h3>Osoite</h3>
+            <p>Välimerenkatu 20<br />00220 Helsinki, Jätkäsaari</p>
+          </div>
+          <div>
+            <h3>Aukiolo</h3>
+            <p>Su–To 14–01<br />Pe–La 14–02</p>
+          </div>
+          <div>
+            <h3>Ota yhteyttä</h3>
+            <p>
+              <a href="tel:+358408239850">040 823 9850</a><br />
+              <a href="mailto:info@barleybait.fi">info@barleybait.fi</a>
+            </p>
+          </div>
+          <div>
+            <h3>Some</h3>
+            <div class="social">
+              <a href="https://www.facebook.com/barleybait" target="_blank" rel="noopener noreferrer">Facebook</a>
+              <a href="https://www.instagram.com/barleybait" target="_blank" rel="noopener noreferrer">Instagram</a>
+              <a href="https://www.tripadvisor.com/Restaurant_Review-g189934-d19238887-Reviews-Barley_Bait-Helsinki_Uusimaa.html" target="_blank" rel="noopener noreferrer">Tripadvisor</a>
+            </div>
+          </div>
+          <a class="btn btn--outline" href="tel:+358408239850">Soita</a>
         </div>
-        <div>
-          <h3>Aukiolo</h3>
-          <p>Su–To 14–01<br />Pe–La 14–02</p>
+        <div class="visit__map">
+          <iframe
+            title="Barley &amp; Bait kartalla"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://maps.google.com/maps?q=V%C3%A4limerenkatu%2020%20Helsinki&t=&z=15&ie=UTF8&iwloc=&output=embed"
+          ></iframe>
         </div>
-        <div>
-          <h3>Ota yhteyttä</h3>
-          <p>
-            <a href="tel:+358408239850">040 823 9850</a><br />
-            <a href="mailto:info@barleybait.fi">info@barleybait.fi</a>
-          </p>
-        </div>
-      </div>
-      <div class="visit__actions">
-        <a class="btn btn--yellow" href="https://maps.google.com/?q=V%C3%A4limerenkatu+20+Helsinki" target="_blank" rel="noopener noreferrer">Kartta</a>
-        <a class="btn btn--outline" href="tel:+358408239850">Soita</a>
       </div>
     </section>
   </main>
@@ -279,7 +272,11 @@
   <footer class="site-footer">
     <img src="assets/barley-bait-logo.png" alt="" width="56" height="56" />
     <p>Barley &amp; Bait, Jätkäsaari</p>
-    <p class="site-footer__note">Epävirallinen konsepti. Logoa käytetään vain demossa.</p>
+    <div class="social social--footer">
+      <a href="https://www.facebook.com/barleybait" target="_blank" rel="noopener noreferrer">Facebook</a>
+      <a href="https://www.instagram.com/barleybait" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="https://www.tripadvisor.com/Restaurant_Review-g189934-d19238887-Reviews-Barley_Bait-Helsinki_Uusimaa.html" target="_blank" rel="noopener noreferrer">Tripadvisor</a>
+    </div>
   </footer>
 
   <script src="script.js"></script>

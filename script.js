@@ -1,5 +1,4 @@
 (() => {
-  const header = document.querySelector(".site-header");
   const toggle = document.querySelector(".nav-toggle");
   const nav = document.querySelector("#site-nav");
   const tabs = [...document.querySelectorAll(".board__tab")];
@@ -50,7 +49,4 @@
     status.textContent = "Kiitos. Tämä on konseptilomake, oikeassa sivussa viesti menisi baarille.";
     form.reset();
   });
-
-  // Keep header reference used for possible future scrolled state without lint noise
-  void header;
 })();
