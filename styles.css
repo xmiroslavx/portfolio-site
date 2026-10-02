@@ -386,6 +386,82 @@ p {
   background: rgba(224, 168, 36, 0.08);
 }
 
+.stats {
+  list-style: none;
+  margin: clamp(2.5rem, 6vw, 4rem) auto 0;
+  padding: 0;
+  width: min(900px, 100%);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  border-top: 1px solid var(--line);
+}
+
+.stats li {
+  display: grid;
+  gap: 0.25rem;
+  justify-items: center;
+  text-align: center;
+  padding: 1.4rem 0.5rem 0;
+}
+
+.stats strong {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 2.7rem);
+  font-weight: 600;
+  color: var(--amber);
+  line-height: 1;
+}
+
+.stats span {
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.beer-list__main em {
+  font-style: normal;
+  color: var(--amber);
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  margin-left: 0.25rem;
+}
+
+.spaces {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  width: min(720px, 100%);
+  margin: 0 auto 2.2rem;
+  text-align: center;
+}
+
+.spaces div {
+  padding: 0.9rem 0.5rem;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.spaces strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.spaces span {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.tasting-list {
+  display: grid;
+  gap: 0;
+  width: min(860px, 100%);
+  margin: 0 auto 2.5rem;
+  border-top: 1px solid var(--line);
+}
+
 .taps,
 .tastings,
 .visit {
@@ -576,27 +652,18 @@ p {
   border-block: 1px solid var(--line);
 }
 
-.tasting-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
-  width: min(1100px, 100%);
-  margin: 0 auto 2.5rem;
-}
-
 .tasting {
-  padding: 1.4rem 1.3rem 1.5rem;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  background:
-    linear-gradient(180deg, rgba(224, 168, 36, 0.06), transparent 40%),
-    var(--bg-3);
-  transition: border-color 0.25s var(--ease), transform 0.25s var(--ease);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem 1.5rem;
+  align-items: center;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--line);
+  transition: background 0.25s var(--ease);
 }
 
 .tasting:hover {
-  border-color: var(--line-strong);
-  transform: translateY(-3px);
+  background: rgba(224, 168, 36, 0.04);
 }
 
 .tasting__type {
@@ -604,12 +671,12 @@ p {
   font-size: 0.75rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  margin-bottom: 0.7rem;
+  margin-bottom: 0.35rem;
 }
 
 .tasting h3 {
   font-size: 1.55rem;
-  margin-bottom: 0.55rem;
+  margin-bottom: 0.35rem;
 }
 
 .tasting p {
@@ -618,10 +685,10 @@ p {
 }
 
 .tasting__price {
-  margin-top: 1.1rem !important;
   color: var(--ink) !important;
   font-family: var(--font-display);
-  font-size: 1.7rem !important;
+  font-size: 1.85rem !important;
+  white-space: nowrap;
 }
 
 .booking {
@@ -850,7 +917,7 @@ p {
 }
 
 @media (max-width: 960px) {
-  .tasting-grid {
+  .stats {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -929,8 +996,18 @@ p {
 }
 
 @media (max-width: 560px) {
-  .tasting-grid {
+  .spaces {
     grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .tasting {
+    grid-template-columns: 1fr;
+    gap: 0.55rem;
+  }
+
+  .tasting__price {
+    justify-self: start;
   }
 
   .hero__brand {

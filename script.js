@@ -50,7 +50,7 @@
 
   const revealTargets = [
     ...document.querySelectorAll(
-      ".story__inner, .section-head, .whiskey__media, .whiskey__content, .tasting, .booking, .visit__info, .visit__map"
+      ".story__inner, .stats, .section-head, .spaces, .whiskey__media, .whiskey__content, .tasting, .booking, .visit__info, .visit__map"
     ),
   ];
   revealTargets.forEach((el) => el.classList.add("reveal"));
