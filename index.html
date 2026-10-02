@@ -1,16 +1,304 @@
 <!DOCTYPE html>
-<html>
+<html lang="fi">
 <head>
-  <title>My First GitHub Page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Barley &amp; Bait — Konsepti</title>
+  <meta name="description" content="Konseptiversio Barley &amp; Bait -oluthuoneen sivustosta. Craft beer &amp; whiskey Jätkäsaaressa." />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <p>This is my first GitHub Pages site.</p>
+  <div class="concept-banner" role="note">
+    <span>Konsepti / Demo</span>
+    <span class="concept-banner__sep" aria-hidden="true">·</span>
+    <span>Ei virallinen Barley &amp; Bait -sivusto</span>
+  </div>
 
-    <section id="about-me">
-        <h2>About Me</h2>
-        <p>Hi! I'm Mirtsi, a computer science student from Joensuu. I love coding, editing videos, and creating content for social media. 🚀</p>
+  <header class="site-header" id="top">
+    <a class="logo" href="#top">
+      <span class="logo__mark">B&amp;B</span>
+      <span class="logo__text">Barley &amp; Bait</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Avaa valikko">
+      <span></span><span></span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Päänavigaatio">
+      <a href="#olut">Olut</a>
+      <a href="#viski">Viski</a>
+      <a href="#tastingit">Tastingit</a>
+      <a href="#vieraile">Vieraile</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero__media" aria-hidden="true">
+        <img
+          src="https://images.unsplash.com/photo-1572116469696-31de0f17cc34?auto=format&fit=crop&w=2400&q=80"
+          alt=""
+          width="2400"
+          height="1600"
+        />
+        <div class="hero__scrim"></div>
+      </div>
+      <div class="hero__content">
+        <p class="hero__place">Jätkäsaari · Helsinki · vuodesta 2019</p>
+        <h1 class="hero__brand">Barley &amp; Bait</h1>
+        <p class="hero__lede">Oluthuone ja viskiravintola, jossa hanat vaihtuvat ja lasi pysyy täynnä.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#olut">Katso hanassa</a>
+          <a class="btn btn--ghost" href="#vieraile">Aukiolo &amp; sijainti</a>
+        </div>
+      </div>
+      <a class="hero__scroll" href="#tarina" aria-label="Vieritä alas">
+        <span></span>
+      </a>
     </section>
 
+    <section class="story" id="tarina">
+      <div class="story__inner">
+        <p class="eyebrow">Tarina</p>
+        <h2>Jätkäsaarelaista olutkulttuuria</h2>
+        <p class="story__text">
+          Barley &amp; Bait on craft beer- ja viskiravintola Jätkäsaaressa.
+          16 hanaa, yli sata tölkkiä ja pulloa, real alea sekä yksityiset tastingit —
+          rento pubi, jossa olut on vakavasti otettavaa.
+        </p>
+        <p class="story__quote">
+          <em>“Sleep late, have fun, get wild, drink whiskey.”</em>
+          <cite>Hunter S. Thompson</cite>
+        </p>
+        <p class="story__badge">Helsingin Uutiset 2025 — 3. paras baari Helsingissä</p>
+      </div>
+    </section>
+
+    <section class="taps" id="olut">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Olut</p>
+          <h2>Hanassa nyt</h2>
+          <p class="section-head__text">Esimerkkilista konseptia varten — oikea lista päivittyy baarissa.</p>
+        </div>
+        <div class="tap-tabs" role="tablist" aria-label="Olutlistat">
+          <button class="tap-tab is-active" type="button" role="tab" aria-selected="true" data-panel="hanassa">Hanassa</button>
+          <button class="tap-tab" type="button" role="tab" aria-selected="false" data-panel="takeaway">Take away</button>
+        </div>
+      </div>
+
+      <div class="tap-panel is-active" id="panel-hanassa" role="tabpanel">
+        <ul class="beer-list">
+          <li>
+            <span class="beer-list__num">01</span>
+            <div class="beer-list__main">
+              <strong>Mind Games</strong>
+              <span>DIPA · Factory Brewing · Kerava</span>
+            </div>
+            <span class="beer-list__meta">8,0% · 0,3 l</span>
+          </li>
+          <li>
+            <span class="beer-list__num">02</span>
+            <div class="beer-list__main">
+              <strong>Baltic Porter</strong>
+              <span>Porter · paikallinen valikoima</span>
+            </div>
+            <span class="beer-list__meta">7,2% · 0,3 l</span>
+          </li>
+          <li>
+            <span class="beer-list__num">03</span>
+            <div class="beer-list__main">
+              <strong>West Coast IPA</strong>
+              <span>IPA · kiertävä hana</span>
+            </div>
+            <span class="beer-list__meta">6,5% · 0,4 l</span>
+          </li>
+          <li>
+            <span class="beer-list__num">04</span>
+            <div class="beer-list__main">
+              <strong>Helles</strong>
+              <span>Lager · crisp &amp; clean</span>
+            </div>
+            <span class="beer-list__meta">4,8% · 0,4 l</span>
+          </li>
+          <li>
+            <span class="beer-list__num">05</span>
+            <div class="beer-list__main">
+              <strong>Sour Cherry</strong>
+              <span>Sour · kausihana</span>
+            </div>
+            <span class="beer-list__meta">5,5% · 0,3 l</span>
+          </li>
+          <li>
+            <span class="beer-list__num">06</span>
+            <div class="beer-list__main">
+              <strong>Real Ale</strong>
+              <span>Cask · vaihtuva tynnyri</span>
+            </div>
+            <span class="beer-list__meta">~4,5% · 0,4 l</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="tap-panel" id="panel-takeaway" role="tabpanel" hidden>
+        <div class="takeaway">
+          <h3>Cans &amp; bottles · take away</h3>
+          <p>Yli 100 tölkkiä ja pulloa mukaan. Take away klo <strong>14–21</strong>, alle 8%.</p>
+          <p class="takeaway__note">Konseptissa ei ole erillistä take away -listaa — valmis sivusto voi kytkeä nykyisen listan suoraan.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="whiskey" id="viski">
+      <div class="whiskey__media" aria-hidden="true">
+        <img
+          src="https://images.unsplash.com/photo-1527281400683-1aae777175f8?auto=format&fit=crop&w=1600&q=80"
+          alt=""
+          width="1600"
+          height="2000"
+        />
+      </div>
+      <div class="whiskey__content">
+        <p class="eyebrow">Viski</p>
+        <h2>Lasi kerrallaan ympäri maailmaa</h2>
+        <p>
+          Viskiravintolan hyllyltä löytyy sekä tuttuja klassikoita että harvinaisempia pullotteita.
+          Sopii yhtä hyvin yhdelle juomalle kuin illan maistelureitille.
+        </p>
+        <ul class="whiskey__points">
+          <li>Laaja viskivalikoima</li>
+          <li>Maistelut yksityisryhmille</li>
+          <li>Rento baaritiski, ei pönötystä</li>
+        </ul>
+        <a class="btn btn--primary" href="#tastingit">Varaa tasting</a>
+      </div>
+    </section>
+
+    <section class="tastings" id="tastingit">
+      <div class="section-head section-head--center">
+        <p class="eyebrow">Tastingit</p>
+        <h2>Maistelu aktiviteetiksi</h2>
+        <p class="section-head__text">Hinta sisältää tilan, opastuksen ja tuotteet. Ryhmille ja firmoille.</p>
+      </div>
+
+      <div class="tasting-grid">
+        <article class="tasting">
+          <p class="tasting__type">Viski</p>
+          <h3>Matka maailman ympäri</h3>
+          <p>Viisi–kuusi maistiaista (~2 cl) ympäri viskimaailmaa.</p>
+          <p class="tasting__price">50 €</p>
+        </article>
+        <article class="tasting">
+          <p class="tasting__type">Viski</p>
+          <h3>Berry Bros &amp; Rudd 1</h3>
+          <p>Kuratoitu setti tunnetun kauppiaan pullotteista.</p>
+          <p class="tasting__price">57 €</p>
+        </article>
+        <article class="tasting">
+          <p class="tasting__type">Olut</p>
+          <h3>Päivän kattaus</h3>
+          <p>Viisi–kuusi olutta (~2 dl) päivän valikoimasta.</p>
+          <p class="tasting__price">35 €</p>
+        </article>
+        <article class="tasting">
+          <p class="tasting__type">Olut</p>
+          <h3>IPA / APA / NEIPA</h3>
+          <p>Tai hapanta eri muodoissa — teema sovitaan ryhmälle.</p>
+          <p class="tasting__price">40 €</p>
+        </article>
+      </div>
+
+      <form class="booking" id="booking-form" novalidate>
+        <div class="booking__intro">
+          <h3>Pyydä tasting-aikaa</h3>
+          <p>Konseptilomake — lähettää demoilmoituksen, ei oikeaa varausta.</p>
+        </div>
+        <fieldset class="booking__choices">
+          <legend>Valitse tasting</legend>
+          <label><input type="checkbox" name="tasting" value="viski-maailma" /> Matka maailman ympäri</label>
+          <label><input type="checkbox" name="tasting" value="viski-bbr" /> Berry Bros &amp; Rudd 1</label>
+          <label><input type="checkbox" name="tasting" value="olut-paiva" /> Päivän kattaus</label>
+          <label><input type="checkbox" name="tasting" value="olut-hop" /> IPA / hapanta</label>
+        </fieldset>
+        <div class="booking__fields">
+          <label>
+            Osallistujamäärä
+            <input type="number" name="guests" min="1" max="40" required placeholder="esim. 8" />
+          </label>
+          <label>
+            Toivottu päivämäärä
+            <input type="date" name="date" required />
+          </label>
+          <label>
+            Nimi
+            <input type="text" name="name" required autocomplete="name" />
+          </label>
+          <label>
+            Sähköposti
+            <input type="email" name="email" required autocomplete="email" />
+          </label>
+          <label class="booking__full">
+            Vapaa sana
+            <textarea name="message" rows="3" placeholder="Aikaikkuna, ruokatoiveet, yritys…"></textarea>
+          </label>
+        </div>
+        <button class="btn btn--primary" type="submit">Lähetä pyyntö</button>
+        <p class="booking__status" id="booking-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="visit" id="vieraile">
+      <div class="visit__info">
+        <p class="eyebrow">Vieraile</p>
+        <h2>Tule Välimerenkadulle</h2>
+        <dl class="visit__details">
+          <div>
+            <dt>Osoite</dt>
+            <dd>Välimerenkatu 20<br />00220 Helsinki, Jätkäsaari</dd>
+          </div>
+          <div>
+            <dt>Aukiolo</dt>
+            <dd>Su–To 14–01<br />Pe–La 14–02</dd>
+          </div>
+          <div>
+            <dt>Yhteys</dt>
+            <dd>
+              <a href="tel:+358408239850">+358 40 823 9850</a><br />
+              <a href="mailto:info@barleybait.fi">info@barleybait.fi</a>
+            </dd>
+          </div>
+        </dl>
+        <div class="visit__actions">
+          <a class="btn btn--primary" href="https://maps.google.com/?q=V%C3%A4limerenkatu+20+Helsinki" target="_blank" rel="noopener noreferrer">Avaa kartta</a>
+          <a class="btn btn--ghost" href="tel:+358408239850">Soita</a>
+        </div>
+      </div>
+      <div class="visit__map" aria-hidden="true">
+        <iframe
+          title="Barley &amp; Bait kartalla"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://maps.google.com/maps?q=V%C3%A4limerenkatu%2020%20Helsinki&t=&z=15&ie=UTF8&iwloc=&output=embed"
+        ></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__brand">
+      <span class="logo__mark">B&amp;B</span>
+      <span>Barley &amp; Bait · Craft Beer &amp; Whiskey · Jätkäsaari</span>
+    </div>
+    <div class="site-footer__links">
+      <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
+      <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="https://untappd.com" target="_blank" rel="noopener noreferrer">Untappd</a>
+    </div>
+    <p class="site-footer__note">Tämä on epävirallinen konseptiversio uudesta sivustosta. Kuvat ovat tunnelmakuvia, eivät baarin omia.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
