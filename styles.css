@@ -954,8 +954,68 @@ p {
   color: var(--yellow);
 }
 
-.social--footer {
+.social--hero {
+  margin-top: 1.2rem;
   justify-content: center;
+  gap: 0.85rem 1.3rem;
+}
+
+.social--hero a {
+  color: #fff;
+  font-size: 0.92rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(245, 197, 24, 0.55);
+  padding-bottom: 0.1rem;
+}
+
+.social--hero a:hover {
+  color: var(--yellow);
+  border-bottom-color: var(--yellow);
+}
+
+.home-info {
+  border-top: 1px solid var(--line);
+  padding: clamp(2.4rem, 6vw, 3.5rem) clamp(1rem, 4vw, 2rem);
+  background: #111;
+}
+
+.home-info__grid {
+  width: min(980px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.4rem;
+}
+
+.home-info h2 {
+  font-family: var(--font-display);
+  color: var(--yellow);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin-bottom: 0.45rem;
+}
+
+.home-info p {
+  color: #d5d5d5;
+  font-size: 1.05rem;
+}
+
+.home-info a {
+  text-decoration: none;
+}
+
+.home-info a:hover {
+  color: var(--yellow);
+}
+
+.home-info__actions {
+  width: min(980px, 100%);
+  margin: 1.6rem auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
 }
 
 .site-footer {
@@ -993,7 +1053,8 @@ p {
   .visit__layout,
   .takeaway__facts,
   .home-links,
-  .whiskey-page__grid {
+  .whiskey-page__grid,
+  .home-info__grid {
     grid-template-columns: 1fr;
   }
 
