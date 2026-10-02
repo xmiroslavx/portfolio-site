@@ -8,7 +8,7 @@
   <meta name="robots" content="noindex, nofollow" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -20,7 +20,7 @@
 
   <header class="site-header" id="top">
     <a class="logo" href="#top">
-      <span class="logo__mark">B&amp;B</span>
+      <img class="logo__img" src="assets/barley-bait-logo.png" alt="" width="40" height="40" />
       <span class="logo__text">Barley &amp; Bait</span>
     </a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Avaa valikko">
@@ -38,7 +38,7 @@
     <section class="hero">
       <div class="hero__media" aria-hidden="true">
         <img
-          src="https://images.unsplash.com/photo-1572116469696-31de0f17cc34?auto=format&fit=crop&w=2400&q=80"
+          src="assets/hero-taps.jpg"
           alt=""
           width="2400"
           height="1600"
@@ -46,10 +46,16 @@
         <div class="hero__scrim"></div>
       </div>
       <div class="hero__content">
-        <p class="hero__place">Craft beer &amp; whiskey · Jätkäsaari · vuodesta 2019</p>
-        <h1 class="hero__brand">Barley &amp; Bait</h1>
+        <img
+          class="hero__logo"
+          src="assets/barley-bait-logo.png"
+          alt="Barley &amp; Bait"
+          width="220"
+          height="220"
+        />
+        <p class="hero__place">Jätkäsaari · Helsinki · vuodesta 2019</p>
         <p class="hero__lede">
-          Oluthuone ja viskiravintola Helsingissä — 16 hanaa, vaihtuva valikoima
+          Oluthuone ja viskiravintola — 16 hanaa, vaihtuva valikoima
           ja rento pubitunnelma Välimerenkadulla.
         </p>
         <div class="hero__actions">
@@ -57,9 +63,6 @@
           <a class="btn btn--ghost" href="#vieraile">Aukiolo &amp; sijainti</a>
         </div>
       </div>
-      <a class="hero__scroll" href="#tarina" aria-label="Vieritä alas">
-        <span></span>
-      </a>
     </section>
 
     <section class="story" id="tarina">
@@ -192,10 +195,10 @@
     <section class="whiskey" id="viski">
       <div class="whiskey__media" aria-hidden="true">
         <img
-          src="https://images.unsplash.com/photo-1527281400683-1aae777175f8?auto=format&fit=crop&w=1600&q=80"
+          src="assets/whiskey.jpg"
           alt=""
           width="1600"
-          height="2000"
+          height="2400"
         />
       </div>
       <div class="whiskey__content">
@@ -352,7 +355,7 @@
 
   <footer class="site-footer">
     <div class="site-footer__brand">
-      <span class="logo__mark">B&amp;B</span>
+      <img class="logo__img" src="assets/barley-bait-logo.png" alt="" width="36" height="36" />
       <span>Barley &amp; Bait · Craft Beer &amp; Whiskey · Jätkäsaari</span>
     </div>
     <div class="site-footer__links">
@@ -361,9 +364,8 @@
       <a href="https://untappd.com" target="_blank" rel="noopener noreferrer">Untappd</a>
     </div>
     <p class="site-footer__note">
-      Tämä on epävirallinen konseptiversio uudesta sivustosta.
-      Kuvat ovat tunnelmakuvia, eivät baarin omia.
-      Copyright-merkintä oikealla sivustolla: Barley&amp;Bait Ravintolat Oy.
+      Epävirallinen konseptiversio. Baarin oma logo käytössä demoa varten.
+      Taustakuvat ovat ilmaisia Unsplash-stockkuvia (eivät baarin omia).
     </p>
   </footer>
 
