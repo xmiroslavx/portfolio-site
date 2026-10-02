@@ -1143,7 +1143,8 @@ p {
   .takeaway__facts,
   .home-links,
   .whiskey-page__grid,
-  .home-info__grid {
+  .home-info__layout,
+  .reviews__grid {
     grid-template-columns: 1fr;
   }
 
